@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macdougal Cam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Macdougal Cam</h1>
+        <div id="videoPlayer"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var videoPlayer = document.getElementById('videoPlayer');
+            var iframe = document.createElement('iframe');
+            iframe.src = "https://www.youtube.com/embed/oOT6HiO2mLY?autoplay=1";
+            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+            iframe.allowFullscreen = true;
+            videoPlayer.appendChild(iframe);
+        });
+    </script>
+</body>
+</html>
