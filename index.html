@@ -45,6 +45,7 @@
         }
         .top h2 {
             font-size: 1.5em;
+            color: rgb(51, 255, 0);
         }
         .video {
             display: flex;
@@ -62,10 +63,24 @@
             font-size: 1.2em;
             padding: 0 10px;
         }
+        .bottom ul {
+            list-style-type: disc;
+            padding: 0 20px;
+        }
+        .bottom li {
+            font-size: 1em;
+            margin: 5px 0;
+        }
         @media (min-width: 601px) {
             .video iframe {
-                max-width: 800px;
-                height: 450px;
+                max-width: 1200px;
+                height: 675px;
+            }
+            .bottom h1 {
+                font-size: 1.5em;
+            }
+            .bottom li {
+                font-size: 1.2em;
             }
         }
         @media (max-width: 600px) {
@@ -81,6 +96,9 @@
             .bottom h1 {
                 font-size: 1em;
             }
+            .bottom li {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -88,14 +106,19 @@
     <div class="all">
         <div class="top">
            <h1>MACDOUGAL.CAM</h1>
-           <h2>NYC'S FORGOTTEN PARTY STREET</h2>
-           <h2 style="color: rgb(51, 255, 0);">MACDOUGAL CAM</h2>
+           <h2>New York City's Forgotten Party Street</h2>
         </div>
         <div class="video">
             <iframe src="https://www.youtube.com/embed/DkYzGe0xheQ?autoplay=1&mute=1" title="YouTube live stream player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="bottom">
             <h1>Things you can expect to see on Macdougal.cam:</h1>
+            <ul>
+                <li>People struggle to parallel park</li>
+                <li>Nice cars</li>
+                <li>People walking</li>
+                <li>People enjoying a meal</li>
+            </ul>
         </div>
     </div>
 </body>
