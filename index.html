@@ -26,6 +26,22 @@
     <link rel="stylesheet" href="css.css">
     <title>MACDOUGAL.CAM</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+        /* Applying the "Jaro" font with a unique class */
+        .jaro-unique {
+            font-family: "Jaro", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Applying the "Sedgwick Ave Display" font to the specific text */
+        .sedgwick-unique {
+            font-family: 'Sedgwick Ave Display', cursive;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -41,10 +57,10 @@
             padding: 0 10px;
         }
         .top h1 {
-            font-size: 2em;
+            font-size: 4em; /* Double the original size */
         }
         .top h2 {
-            font-size: 1.5em;
+            font-size: 2.25em; /* 1.5 times the original size */
             color: rgb(51, 255, 0);
         }
         .video {
@@ -55,8 +71,8 @@
         }
         .video iframe {
             width: 100%;
-            max-width: 560px;
-            height: 315px;
+            max-width: 800px; /* Increase size for desktop */
+            height: 450px; /* Increase size for desktop */
         }
         .bottom h1 {
             text-align: center;
@@ -73,8 +89,8 @@
         }
         @media (min-width: 601px) {
             .video iframe {
-                max-width: 1200px;
-                height: 675px;
+                max-width: 1600px; /* Increase size for larger screens */
+                height: 900px; /* Increase size for larger screens */
             }
             .bottom h1 {
                 font-size: 1.5em;
@@ -85,13 +101,14 @@
         }
         @media (max-width: 600px) {
             .top h1 {
-                font-size: 1.5em;
+                font-size: 3em; /* Adjust size for mobile */
             }
             .top h2 {
-                font-size: 1.2em;
+                font-size: 1.875em; /* Adjust size for mobile */
             }
             .video iframe {
                 height: auto;
+                max-width: 100%; /* Ensure it fits within mobile screen */
             }
             .bottom h1 {
                 font-size: 1em;
@@ -103,10 +120,10 @@
     </style>
 </head>
 <body>
-    <div class="all">
+    <div class="all jaro-unique">
         <div class="top">
            <h1>MACDOUGAL.CAM</h1>
-           <h2>New York City's Forgotten Party Street</h2>
+           <h2 class="sedgwick-unique">New York City's Forgotten Party Street</h2>
         </div>
         <div class="video">
             <iframe src="https://www.youtube.com/embed/DkYzGe0xheQ?autoplay=1&mute=1&playsinline=1" title="YouTube live stream player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
